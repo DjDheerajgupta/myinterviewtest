@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+	var a=
+	[
+		{
+			id:1,
+			name:"dheeraj",
+			address:"hajipur"
+		},
+		{
+			id:2,
+			name:"rohti",
+			address:"patna"
+		},
+		{
+			id:6,
+			name:"dheeraj",
+			address:"sonu"
+		},
+		{
+			id:3,
+			name:"ram",
+			address:"sujit"
+		}
+
+
+	]
+//this is for unsorted object 
+	function lis() 
+	{
+		// body...
+		for(var j=0;j<=a.length;j++)
+	{
+		document.write(a[j].id+ a[j].name +"<br>")
+	}
+	}
+	lis();//here i call function for display unsorted data
+
+
+//function for sorting the object
+	function sorts() {
+		// body...
+		a.sort((a,b)=>
+		{
+			return a.id-b.id;
+		}
+		)
+
+	for(var j=0;j<=a.length;j++)
+	{
+		document.write(a[j].id+ a[j].name +"<br>")
+	}
+	}
+
+
+</script>
+<button onclick="sorts();">click sorts</button>
+
+</body>
+</html>
